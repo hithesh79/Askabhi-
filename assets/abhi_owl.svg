@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 390" role="img" aria-labelledby="title desc">
+  <title id="title">Abhi 🚀 - Official AskAbhi 360 Mascot</title>
+  <desc id="desc">Abhi the Rocket - The official white and teal robot rocket mascot of AskAbhi 360 with sleek visor face and cyan A chest badge.</desc>
+  <defs>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3AAFA9"/>
+      <stop offset="50%" stop-color="#2B7A78"/>
+      <stop offset="100%" stop-color="#17252A"/>
+    </linearGradient>
+    <linearGradient id="whiteBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FEFFFF"/>
+      <stop offset="60%" stop-color="#DEF2F1"/>
+      <stop offset="100%" stop-color="#C5E8E5"/>
+    </linearGradient>
+    <linearGradient id="visorGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243E44"/>
+      <stop offset="100%" stop-color="#17252A"/>
+    </linearGradient>
+    <linearGradient id="thrusterFlame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FEFFFF"/>
+      <stop offset="30%" stop-color="#DEF2F1"/>
+      <stop offset="70%" stop-color="#3AAFA9"/>
+      <stop offset="100%" stop-color="#2B7A78" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Booster Flame -->
+  <g id="boosters">
+    <path d="M150 290 Q180 380 180 380 Q180 380 210 290 Z" fill="url(#thrusterFlame)" filter="url(#softGlow)"/>
+    <path d="M162 290 Q180 340 180 340 Q180 340 198 290 Z" fill="#FEFFFF"/>
+  </g>
+
+  <!-- Side Wings / Fins (Teal) -->
+  <path d="M120 220 C80 235 68 280 82 310 C102 310 128 285 132 255 Z" fill="url(#tealGrad)" stroke="#2B7A78" stroke-width="2"/>
+  <path d="M240 220 C280 235 292 280 278 310 C258 310 232 285 228 255 Z" fill="url(#tealGrad)" stroke="#2B7A78" stroke-width="2"/>
+
+  <!-- Center Tail Fin (Teal) -->
+  <path d="M174 250 L180 310 L186 250 Z" fill="url(#tealGrad)"/>
+
+  <!-- Main Robot Body (White/Ice-Mint) -->
+  <path d="M180 40 C125 40 115 130 118 280 L242 280 C245 130 235 40 180 40 Z" fill="url(#whiteBody)" stroke="#DEF2F1" stroke-width="2"/>
+
+  <!-- Helmet Teal Rim -->
+  <ellipse cx="180" cy="135" rx="64" ry="58" fill="url(#tealGrad)"/>
+  
+  <!-- Face Visor (Black Glossy Screen) -->
+  <ellipse cx="180" cy="135" rx="55" ry="48" fill="url(#visorGlass)"/>
+
+  <!-- Cute Glowing Cyan Eyes -->
+  <ellipse cx="160" cy="130" rx="9" ry="12" fill="#3AAFA9"/>
+  <ellipse cx="160" cy="128" rx="4" ry="6" fill="#FEFFFF"/>
+  
+  <ellipse cx="200" cy="130" rx="9" ry="12" fill="#3AAFA9"/>
+  <ellipse cx="200" cy="128" rx="4" ry="6" fill="#FEFFFF"/>
+
+  <!-- Cute Smile on Screen -->
+  <path d="M166 148 Q180 160 194 148" fill="none" stroke="#3AAFA9" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Teal/Mint 'A' Medallion Chest Badge -->
+  <circle cx="180" cy="225" r="22" fill="url(#tealGrad)" stroke="#FEFFFF" stroke-width="2.5" filter="url(#softGlow)"/>
+  <circle cx="180" cy="225" r="17" fill="#FEFFFF"/>
+  <text x="180" y="233" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="900" font-size="20" fill="#2B7A78" text-anchor="middle">A</text>
+
+  <!-- Waving Robot Hand (Right) -->
+  <g transform="translate(250, 160) rotate(-25)">
+    <rect x="0" y="0" width="14" height="24" rx="7" fill="url(#whiteBody)" stroke="#DEF2F1"/>
+    <circle cx="7" cy="30" r="11" fill="url(#whiteBody)" stroke="#DEF2F1"/>
+  </g>
+</svg>

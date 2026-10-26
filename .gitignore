@@ -1,0 +1,34 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit secrets (keep config.toml)
+.streamlit/secrets.toml
+
+# Logs
+*.log

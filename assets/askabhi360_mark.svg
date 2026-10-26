@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title">
+  <title id="title">AskAbhi 360</title>
+  <defs><linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B7FF72"/><stop offset="1" stop-color="#39C978"/></linearGradient></defs>
+  <g transform="translate(4 2) scale(.22)">
+    <path d="M92 142 C93 105 121 77 152 72 C164 67 172 64 180 64 C193 64 206 70 219 77 C251 94 268 126 270 165 L264 288 C258 329 223 347 180 347 C137 347 103 329 96 288Z" fill="#8D472A"/>
+    <path d="M112 74 C91 44 103 22 127 36 L158 54Z" fill="#B96A3D"/><path d="M203 52 C214 22 241 25 238 47 L252 77Z" fill="#9A512F"/>
+    <path d="M95 146 C88 103 121 64 162 65 C171 65 177 70 180 79 C185 68 192 64 201 67 C241 77 264 109 258 151 C252 194 222 216 180 216 C137 216 104 191 95 146Z" fill="#E6D0AD"/>
+    <ellipse cx="144" cy="137" rx="43" ry="48" fill="#FFF9EE"/><ellipse cx="216" cy="137" rx="43" ry="48" fill="#FFF9EE"/><ellipse cx="148" cy="141" rx="28" ry="34" fill="#76E99C"/><ellipse cx="212" cy="141" rx="28" ry="34" fill="#76E99C"/><ellipse cx="149" cy="143" rx="21" ry="27" fill="#30251D"/><ellipse cx="211" cy="143" rx="21" ry="27" fill="#30251D"/><circle cx="154" cy="132" r="8" fill="#FFF"/><circle cx="216" cy="132" r="8" fill="#FFF"/>
+    <path d="M164 172 Q180 158 196 172 L181 196 Q178 200 175 195Z" fill="#B7FF72"/>
+    <circle cx="180" cy="267" r="24" fill="#FFF1DC" stroke="#B7FF72" stroke-width="4"/><circle cx="180" cy="267" r="18" fill="url(#leaf)"/><path d="M171 278 L171 255 L180 249 L189 255 L189 278 L180 272Z" fill="#FFF6E7"/>
+  </g>
+  <text x="86" y="48" fill="#F0F7EF" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="-1.5">askabhi</text>
+  <text x="206" y="48" fill="#B7FF72" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="-1.4">360</text>
+  <text x="88" y="70" fill="#A1B4A3" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.8">PLAN · PAY · GROW</text>
+</svg>

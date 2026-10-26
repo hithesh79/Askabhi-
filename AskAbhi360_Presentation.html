@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AskAbhi 360 · Problem Statement F-02 Solution Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #0B1619;
+    --card-bg: #17252A;
+    --card-surface: #1E3438;
+    --teal-deep: #2B7A78;
+    --teal-vibrant: #3AAFA9;
+    --mint-soft: #DEF2F1;
+    --white: #FEFFFF;
+    --text-muted: #8EAEAB;
+    --accent-orange: #E07A5F;
+    --accent-green: #10B981;
+    --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    background: var(--bg-dark);
+    color: var(--white);
+    font-family: var(--font-main);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Presentation Stage */
+  #deck {
+    width: 92vw;
+    max-width: 1280px;
+    height: 82vh;
+    max-height: 720px;
+    background: var(--card-bg);
+    border: 2px solid var(--teal-deep);
+    border-radius: 24px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(58, 175, 169, 0.15);
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    padding: 44px 56px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+
+  .slide.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Slide Typography */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(58, 175, 169, 0.18);
+    border: 1px solid var(--teal-vibrant);
+    color: var(--teal-vibrant);
+    padding: 5px 14px;
+    border-radius: 99px;
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-bottom: 12px;
+  }
+
+  .slide-title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+
+  .slide-title span {
+    color: var(--teal-vibrant);
+  }
+
+  .slide-sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* Layout Grids */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    flex: 1;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    flex: 1;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    flex: 1;
+  }
+
+  /* Cards */
+  .p-card {
+    background: var(--card-surface);
+    border: 1px solid rgba(58, 175, 169, 0.3);
+    border-radius: 16px;
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .p-card.highlight {
+    border-color: var(--teal-vibrant);
+    background: linear-gradient(145deg, #1A3438, #23464C);
+    box-shadow: 0 6px 20px rgba(58, 175, 169, 0.2);
+  }
+
+  .p-card-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .p-card-text {
+    font-size: 13.5px;
+    color: var(--mint-soft);
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    margin-top: 6px;
+  }
+
+  th {
+    background: rgba(43, 122, 120, 0.35);
+    color: var(--teal-vibrant);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 800;
+    border-bottom: 1.5px solid var(--teal-vibrant);
+  }
+
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(58, 175, 169, 0.15);
+    color: var(--white);
+  }
+
+  /* Navigation Bar */
+  #controls {
+    width: 92vw;
+    max-width: 1280px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+  }
+
+  .nav-btn {
+    background: var(--card-surface);
+    border: 1.5px solid var(--teal-deep);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .nav-btn:hover {
+    background: var(--teal-vibrant);
+    color: var(--bg-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(58, 175, 169, 0.4);
+  }
+
+  #progress-wrap {
+    flex: 1;
+    max-width: 480px;
+    height: 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 99px;
+    overflow: hidden;
+    margin: 0 24px;
+  }
+
+  #progress-bar {
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(90deg, var(--teal-deep), var(--teal-vibrant));
+    border-radius: 99px;
+    transition: width 0.3s ease;
+  }
+
+  #counter {
+    font-size: 14px;
+    font-weight: 750;
+    color: var(--text-muted);
+    min-width: 90px;
+    text-align: right;
+  }
+
+  /* Print Styles */
+  @media print {
+    body { overflow: visible; height: auto; background: #fff; color: #000; }
+    #deck { width: 100%; height: auto; border: none; box-shadow: none; }
+    .slide { position: relative; display: flex !important; opacity: 1; transform: none; page-break-after: always; height: 100vh; padding: 40px; }
+    #controls { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="deck">
+
+  <!-- SLIDE 1: TITLE SLIDE -->
+  <div class="slide active">
+    <div>
+      <div class="badge">✦ Hackathon Pitch Deck · Problem Statement F-02</div>
+      <h1 class="slide-title">AskAbhi <span style="color:var(--teal-vibrant)">360</span></h1>
+      <div style="font-size: 24px; font-weight: 800; color: var(--mint-soft); margin-bottom: 8px;">Multi-Goal Financial Planning Under Stochastic Uncertainty</div>
+      <div class="slide-sub">A deterministic decision-support copilot navigating competing life priorities, stochastic market volatility, and life shocks.</div>
+    </div>
+
+    <div class="grid-3" style="margin-top: 10px;">
+      <div class="p-card highlight">
+        <div class="p-card-title">🎯 Multi-Goal Priority Engine</div>
+        <div class="p-card-text">Resolves resource competition sequentially: Living Obligations → Emergency Floor → Hard Goals → Flexible Milestones.</div>
+      </div>
+      <div class="p-card highlight">
+        <div class="p-card-title">🎲 Stochastic Monte Carlo Core</div>
+        <div class="p-card-text">2,000 correlated simulations under Common Random Numbers (CRN) with category-specific stochastic inflation.</div>
+      </div>
+      <div class="p-card highlight">
+        <div class="p-card-title">🛡️ Grounded AI Copilot (Abhi 🚀)</div>
+        <div class="p-card-text">Zero hallucinated balances. Verifiable proofs and mathematical audit trails for every recommendation.</div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(58,175,169,0.25); padding-top: 14px; margin-top: 14px; font-size: 13px; color: var(--text-muted);">
+      <span>Personal Finance Decision Support Engine</span>
+      <span>Live Application: <strong>http://localhost:8508</strong></span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: THE PROBLEM (F-02) -->
+  <div class="slide">
+    <div>
+      <div class="badge">Problem Deconstruction</div>
+      <h2 class="slide-title">The Real-World Reality of <span>Problem F-02</span></h2>
+      <div class="slide-sub">Why traditional financial planning spreadsheets and generic AI chatbots fail.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="p-card">
+        <div class="p-card-title" style="color:var(--accent-orange)">❌ Why Spreadsheets Fail</div>
+        <div class="p-card-text">
+          • <strong>Static 8% Return Myth</strong>: Ignores sequence-of-returns risk and bear markets.<br><br>
+          • <strong>Flat Inflation Assumption</strong>: Higher education (9%) and medical (11%) outpace general CPI (6%).<br><br>
+          • <strong>Hidden Goal Trade-Offs</strong>: Cannot calculate the mathematical drop in Goal B when Goal A is funded.<br><br>
+          • <strong>Stated vs Actual Spend</strong>: Ignores weekend splurges and payday lifestyle creep.
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card-title" style="color:var(--accent-orange)">❌ Why LLMs & Chatbots Fail</div>
+        <div class="p-card-text">
+          • <strong>Financial Hallucinations</strong>: Generic LLMs invent savings totals and EMI math.<br><br>
+          • <strong>No Stochastic Modeling</strong>: Cannot execute 2,000 Monte Carlo paths in a text prompt.<br><br>
+          • <strong>Unverifiable Advice</strong>: Lacks mathematical audit trails or reproducibility guarantees.<br><br>
+          • <strong>Zero Banking Interactivity</strong>: Disconnected from real statements and UPI payment rails.
+        </div>
+      </div>
+    </div>
+
+    <div style="background: rgba(58,175,169,0.12); border: 1px solid var(--teal-vibrant); border-radius: 12px; padding: 12px 18px; font-size: 13.5px; color: var(--mint-soft); margin-top: 14px;">
+      💡 <strong>The F-02 Imperative</strong>: Users need an interactive tool to evaluate competing goals, modify assumptions, simulate shocks, and understand consequences over time.
+    </div>
+  </div>
+
+  <!-- SLIDE 3: SYSTEM ARCHITECTURE -->
+  <div class="slide">
+    <div>
+      <div class="badge">Architecture & Design</div>
+      <h2 class="slide-title">AskAbhi 360 <span>Three-Tier Architecture</span></h2>
+      <div class="slide-sub">Clean separation between mathematical deterministic computation and conversational guidance.</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="p-card">
+        <div class="p-card-title">🖥️ Tier 1: Interactive UI</div>
+        <div class="p-card-text">
+          • <strong>Fintech Command Center</strong>: Real-time 90-day predictive runway.<br><br>
+          • <strong>Operating Mode Switch</strong>: 🛡️ Value Mode vs 🚀 Turbo Mode.<br><br>
+          • <strong>UPI 2.0 Simulator</strong>: Contact pay, QR scanning, and soundbox voice alerts.<br><br>
+          • <strong>Rich Sizing & Sound FX</strong>: Full Web Audio API feedback.
+        </div>
+      </div>
+      <div class="p-card highlight">
+        <div class="p-card-title">🚀 Tier 2: AI Copilot</div>
+        <div class="p-card-text">
+          • <strong>Abhi Personality</strong>: Empathetic, grounded financial companion.<br><br>
+          • <strong>Zero Hallucinations</strong>: Offline intent router querying deterministic Python tools.<br><br>
+          • <strong>Audit Drawer</strong>: Full reproducible fingerprints (`seed=42`, code proof, inputs).<br><br>
+          • <strong>Actionable Levers</strong>: Explains tradeoffs in plain English.
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card-title">⚙️ Tier 3: Math Engine</div>
+        <div class="p-card-text">
+          • <strong>Monte Carlo Core</strong>: 2,000 correlated stochastic draws (CRN).<br><br>
+          • <strong>Priority Arbiter</strong>: Sequential waterfall resource allocator.<br><br>
+          • <strong>Chaos Engine</strong>: Job loss, pay cuts, and medical shocks.<br><br>
+          • <strong>Behaviour Twin</strong>: Statement ingestion and leak detection.
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size: 12.5px; color: var(--text-muted); border-top: 1px solid rgba(58,175,169,0.2); padding-top: 10px; margin-top: 10px;">
+      ✦ 100% Deterministic Reproducibility: Every simulation result produces identical numbers on identical random seeds.
+    </div>
+  </div>
+
+  <!-- SLIDE 4: MULTI-GOAL WATERFALL & CONFLICT MATRIX -->
+  <div class="slide">
+    <div>
+      <div class="badge">Multi-Goal Optimization</div>
+      <h2 class="slide-title">Priority Arbiter &amp; <span>Goal Conflict Matrix</span></h2>
+      <div class="slide-sub">Resolving simultaneous competing demands on finite monthly income.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="p-card">
+        <div class="p-card-title">🌊 Capital Allocation Waterfall</div>
+        <div class="p-card-text">
+          <strong>1. Contractual Obligations</strong>: Active EMIs (Home/Car loan) ring-fenced first.<br><br>
+          <strong>2. Essential Living Spend</strong>: Groceries, utilities, health insurance floor.<br><br>
+          <strong>3. Emergency Reserve Cushion</strong>: 3–6 months liquid cash floor maintained.<br><br>
+          <strong>4. Hard Goals (Priority 1)</strong>: E.g., Child Higher Education, Home Down Payment.<br><br>
+          <strong>5. Flexible Goals (Priority 2 &amp; 3)</strong>: Dream bike, vacation, gadgets.<br><br>
+          <strong>6. Safe-to-Spend Allowance</strong>: Daily discretionary spend pacing.
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card-title">⚖️ Goal Conflict Sensitivity Matrix</div>
+        <div class="p-card-text">
+          AskAbhi calculates exact mathematical cross-elasticities between active goals:
+          <table>
+            <thead>
+              <tr><th>Goal Action</th><th>Primary Goal</th><th>Collateral Goal Impact</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Buy BMW Bike (Cash)</td><td>BMW: 94% ✓</td><td>Home Down Payment: <strong>-22 pp</strong> ⚠️</td></tr>
+              <tr><td>Buy BMW Bike (Loan)</td><td>BMW: 82% ✓</td><td>Home Down Payment: <strong>-6 pp</strong> ✓</td></tr>
+              <tr><td>Turbo Mode (+₹3.6k SIP)</td><td>BMW: 88% ✓</td><td>Achieved <strong>6 Months Sooner</strong></td></tr>
+            </tbody>
+          </table>
+          <div style="font-size:12px; color:var(--teal-vibrant); margin-top:8px;">
+            ✦ Avoids surprise shortfalls by making goal sacrifices completely visible.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: STOCHASTIC UNCERTAINTY & MONTE CARLO -->
+  <div class="slide">
+    <div>
+      <div class="badge">Planning Under Uncertainty</div>
+      <h2 class="slide-title">2,000-Draw <span>Stochastic Monte Carlo Engine</span></h2>
+      <div class="slide-sub">Simulating market volatility, correlated assets, and variable inflation.</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="p-card">
+        <div class="p-card-title">📈 Correlated Asset Returns</div>
+        <div class="p-card-text">
+          • <strong>Cash &amp; Liquid Funds</strong>: Low volatility, guaranteed floor.<br><br>
+          • <strong>Fixed Income / Debt</strong>: Stochastic yield modeling.<br><br>
+          • <strong>Domestic Equity</strong>: Geometric Brownian Motion with correlated market drift.<br><br>
+          • <strong>Gold &amp; Real Estate</strong>: Non-correlated diversification benefits.
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card-title">🏷️ Category-Specific Inflation</div>
+        <div class="p-card-text">
+          • <strong>General CPI</strong>: Modeled at ~5.5% stochastic drift.<br><br>
+          • <strong>Higher Education</strong>: Accelerated drift at 8.5% - 10.0%.<br><br>
+          • <strong>Healthcare &amp; Medical</strong>: Modeled at 9.0% - 11.5%.<br><br>
+          • <strong>Lifestyle &amp; Tech</strong>: Flat to moderate replacement inflation.
+        </div>
+      </div>
+      <div class="p-card highlight">
+        <div class="p-card-title">🎯 Common Random Numbers</div>
+        <div class="p-card-text">
+          • <strong>Fair Comparison</strong>: Compares Plan A vs Plan B on <em>identical random draws</em>.<br><br>
+          • <strong>No Noise</strong>: Probability differences reflect pure decision quality, not simulation variance.<br><br>
+          • <strong>Standard Error Display</strong>: Every metric shows Monte Carlo precision (e.g. <code>±0.9 pp</code>).
+        </div>
+      </div>
+    </div>
+
+    <div style="background: rgba(23,37,42,0.8); border: 1px solid var(--teal-deep); border-radius: 12px; padding: 12px 18px; font-size: 13.5px; color: var(--mint-soft); margin-top: 14px;">
+      📊 <strong>Confidence Bands</strong>: Output delivers P10 (Stress test floor), P50 (Expected median), and P90 (Optimistic ceiling) net worth trajectories.
+    </div>
+  </div>
+
+  <!-- SLIDE 6: CAN I AFFORD IT? -->
+  <div class="slide">
+    <div>
+      <div class="badge">Decision Support Engine</div>
+      <h2 class="slide-title">"Can I Afford It?" <span>Purchase Calculator</span></h2>
+      <div class="slide-sub">Evaluating major lifestyle purchases against active long-term life plans.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="p-card">
+        <div class="p-card-title">🛵 The Scenario: ₹4.5 Lakh BMW G 310 R</div>
+        <div class="p-card-text">
+          • <strong>Purchase Price</strong>: ₹4,50,000 on-road.<br>
+          • <strong>Target Timeline</strong>: 12 Months.<br>
+          • <strong>Down Payment</strong>: 25% (₹1,12,500).<br>
+          • <strong>Loan Terms</strong>: 9.5% interest, 36 months tenure (EMI: ~₹11,215/mo).<br><br>
+          <strong>The Engine's Verdict</strong>:
+          <div style="background:rgba(16,185,129,0.15); border:1px solid var(--accent-green); border-radius:10px; padding:8px 12px; color:var(--accent-green); font-weight:750; margin-top:6px;">
+            ✓ Affordable via Loan Mode (82% Feasibility)
+          </div>
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card-title">🔍 The 3 Golden Affordability Checks</div>
+        <div class="p-card-text">
+          <strong>1. Emergency Floor Safety</strong>: Down payment of ₹1.12L leaves required 3-month liquid reserves intact.<br><br>
+          <strong>2. Debt Burden Threshold (&lt; 40%)</strong>: Total EMIs equal 26% of take-home income (well within safe lending standards).<br><br>
+          <strong>3. Collateral Life Goal Impact</strong>:
+          • Home Down Payment drops only 4.8 pp.<br>
+          • Child Education remains 100% funded.<br><br>
+          <strong>Recommended Action</strong>: Trim ₹2,500/month from weekend dining to completely erase collateral delay!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: CHAOS MONEY & PLAN REPAIR -->
+  <div class="slide">
+    <div>
+      <div class="badge">Stress Testing &amp; Recovery</div>
+      <h2 class="slide-title">Chaos Money <span>&amp; Non-Worsening Plan Repair</span></h2>
+      <div class="slide-sub">Testing plausible life shocks and generating algorithmic recovery plans.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="p-card">
+        <div class="p-card-title" style="color:var(--accent-orange)">⚡ Plausible Life Shocks Simulated</div>
+        <div class="p-card-text">
+          • <strong>Job Loss (3–6 Months)</strong>: 100% salary stoppage; tests liquid emergency runway.<br><br>
+          • <strong>Income Reduction (-20%)</strong>: Tests discretionary spending flexibility for 12 months.<br><br>
+          • <strong>Medical Shock (₹5,00,000)</strong>: Immediate emergency capital outflow.<br><br>
+          • <strong>Combined Shock</strong>: Income cut + delayed bonus + medical invoice.
+        </div>
+      </div>
+      <div class="p-card highlight">
+        <div class="p-card-title" style="color:var(--teal-vibrant)">🛠️ Algorithmic Plan Repair Engine</div>
+        <div class="p-card-text">
+          When a shock occurs, AskAbhi's optimizer searches <strong>non-worsening repair packages</strong>:
+          <br><br>
+          1. <strong>Triage Soft Goals</strong>: Pauses flexible goals while ring-fencing hard retirement and education goals.<br><br>
+          2. <strong>Debt Restructuring</strong>: Identifies high-interest debts for consolidation.<br><br>
+          3. <strong>Restored Feasibility</strong>: Restores plan viability from 42% back to 85%+ on identical random draws without manual trial-and-error.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8: BEHAVIOUR TWIN & LEAK DETECTOR -->
+  <div class="slide">
+    <div>
+      <div class="badge">Behavioural Economics</div>
+      <h2 class="slide-title">Behaviour Twin <span>&amp; Rupee-to-Days Leak Analytics</span></h2>
+      <div class="slide-sub">Mining real transaction statements to reconcile stated plans with actual debit habits.</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="p-card">
+        <div class="p-card-title">🧠 Behavioural Diagnostics</div>
+        <div class="p-card-text">
+          • <strong>Weekend Multiplier (1.85x)</strong>: Spends 85% more on Saturdays &amp; Sundays.<br><br>
+          • <strong>Payday Burst (38%)</strong>: 38% of monthly budget spent in first 5 days post-salary.<br><br>
+          • <strong>Month-End Squeeze</strong>: Balances dip uncomfortably close to zero before payday.
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card-title">📈 Lifestyle Creep Slope</div>
+        <div class="p-card-text">
+          • <strong>The Creep Tax</strong>: Identifies upward discretionary spending drift (+₹1,240/month).<br><br>
+          • <strong>Subscription Tracker</strong>: Uncovers 5 recurring subscriptions (Netflix, Spotify, Gym, JioFiber).<br><br>
+          • <strong>Sinking Fund Triggers</strong>: Flags volatile categories requiring cash buffers.
+        </div>
+      </div>
+      <div class="p-card highlight">
+        <div class="p-card-title">⏱️ Rupee-to-Days Leak Detector</div>
+        <div class="p-card-text">
+          Translates everyday spending decisions into tangible goal timeline consequences:
+          <br><br>
+          <em>"Trimming ₹3,200/month from food delivery apps recovers <strong>54 days</strong> on your home down payment goal!"</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 9: VALUE MODE VS TURBO MODE -->
+  <div class="slide">
+    <div>
+      <div class="badge">Operating Strategy</div>
+      <h2 class="slide-title">Operating Engine: <span>Value Mode vs Turbo Mode</span></h2>
+      <div class="slide-sub">Empowering users to toggle between defensive resilience and aggressive milestone acceleration.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="p-card">
+        <div class="p-card-title">🛡️ Value Mode (Prudent / Defensive)</div>
+        <div class="p-card-text">
+          • <strong>Primary Objective</strong>: Capital preservation, zero debt stress, and guaranteed liquidity.<br><br>
+          • <strong>Emergency Buffer</strong>: Strict 6-month liquid reserve floor strictly defended.<br><br>
+          • <strong>Savings Allocation</strong>: Stable +25% monthly savings rate.<br><br>
+          • <strong>Discretionary Cap</strong>: Relaxed daily allowance.<br><br>
+          • <strong>Best For</strong>: Volatile incomes, early-career savers, high-debt households.
+        </div>
+      </div>
+      <div class="p-card highlight">
+        <div class="p-card-title">🚀 Turbo Mode (Goal Accelerator)</div>
+        <div class="p-card-text">
+          • <strong>Primary Objective</strong>: Maximum goal compounding velocity and fast-tracked milestones.<br><br>
+          • <strong>Emergency Buffer</strong>: 3-month buffer + aggressive SIP compounding.<br><br>
+          • <strong>Savings Allocation</strong>: Boosted +40% monthly savings velocity.<br><br>
+          • <strong>Discretionary Cap</strong>: Trims 20% from unneeded leaks redirected to goals.<br><br>
+          • <strong>Result</strong>: Achieves BMW bike &amp; home goals <strong>6–9 months sooner</strong>!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 10: CONCLUSION & SUMMARY -->
+  <div class="slide">
+    <div>
+      <div class="badge">Conclusion &amp; Impact</div>
+      <h2 class="slide-title">How AskAbhi 360 <span>Solves Problem F-02</span></h2>
+      <div class="slide-sub">A production-grade, interactive, decision-support solution for multi-goal financial life.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="p-card highlight">
+        <div class="p-card-title">🏆 F-02 Requirement Matrix</div>
+        <div class="p-card-text">
+          ✓ <strong>Multiple Competing Goals</strong>: Solved via Priority Arbiter &amp; Conflict Matrix.<br><br>
+          ✓ <strong>Planning Under Uncertainty</strong>: Solved via 2,000-draw correlated Monte Carlo.<br><br>
+          ✓ <strong>Changing Assumptions &amp; Shocks</strong>: Solved via Chaos Money &amp; Plan Repair.<br><br>
+          ✓ <strong>Understand Consequences &amp; Trade-Offs</strong>: Solved via "Can I Afford It?" engine.<br><br>
+          ✓ <strong>Behaviour Reconciliation</strong>: Solved via Behaviour Twin &amp; Leak Detector.
+        </div>
+      </div>
+      <div class="p-card">
+        <div class="p-card-title">🚀 Key Innovations</div>
+        <div class="p-card-text">
+          • <strong>Zero LLM Hallucinations</strong>: Deterministic calculations with verifiable audit trails.<br><br>
+          • <strong>Full Fintech Integration</strong>: PhonePe/UPI rails, QR scanner, and soundbox alerts.<br><br>
+          • <strong>Operating Strategy Modes</strong>: Value Mode vs Turbo Mode toggle.<br><br>
+          • <strong>Production-Ready UX</strong>: Dynamic animations, Web Audio API sound FX, and smooth scroll.
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; font-size: 16px; font-weight: 850; color: var(--teal-vibrant); margin-top: 14px;">
+      AskAbhi 360 transforms personal financial planning under uncertainty into a confident, evidence-based rocket flight! 🚀
+    </div>
+  </div>
+
+</div>
+
+<!-- BOTTOM CONTROLS BAR -->
+<div id="controls">
+  <button class="nav-btn" onclick="prevSlide()">◀ Previous</button>
+  <div id="progress-wrap">
+    <div id="progress-bar"></div>
+  </div>
+  <div style="display: flex; align-items: center; gap: 14px;">
+    <button class="nav-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    <div id="counter">Slide 1 / 10</div>
+    <button class="nav-btn" onclick="nextSlide()" style="background:var(--teal-vibrant); color:var(--bg-dark);">Next ▶</button>
+  </div>
+</div>
+
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+  const progressBar = document.getElementById('progress-bar');
+  const counter = document.getElementById('counter');
+
+  function update() {
+    slides.forEach((s, idx) => {
+      s.classList.toggle('active', idx === current);
+    });
+    progressBar.style.width = ((current + 1) / slides.length * 100) + '%';
+    counter.innerText = `Slide ${current + 1} / ${slides.length}`;
+  }
+
+  function nextSlide() {
+    if (current < slides.length - 1) {
+      current++;
+      update();
+    }
+  }
+
+  function prevSlide() {
+    if (current > 0) {
+      current--;
+      update();
+    }
+  }
+
+  // Keyboard navigation
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'Space' || e.key === 'PageDown') {
+      nextSlide();
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      prevSlide();
+    }
+  });
+
+  update();
+</script>
+
+</body>
+</html>

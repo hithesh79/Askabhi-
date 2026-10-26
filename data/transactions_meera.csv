@@ -1,0 +1,473 @@
+date,description,amount,type,account
+2025-10-03,Zomato order,842.01,debit,SAVINGS
+2025-10-04,Zepto delivery,662.57,debit,SAVINGS
+2025-10-05,Medical pharmacy,818.57,debit,SAVINGS
+2025-10-05,Rent,18000.0,debit,SAVINGS
+2025-10-06,BigBasket groceries,2989.17,debit,SAVINGS
+2025-10-06,Uber ride,487.89,debit,SAVINGS
+2025-10-09,Uber ride,454.13,debit,SAVINGS
+2025-10-10,Freelance client payment 1,82843.85,credit,SAVINGS
+2025-10-10,Gym membership,1200.0,debit,SAVINGS
+2025-10-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2025-10-12,Airtel broadband,999.0,debit,SAVINGS
+2025-10-12,Coffee shop,203.31,debit,SAVINGS
+2025-10-12,Petrol pump,1901.07,debit,SAVINGS
+2025-10-12,Restaurant dinner,1643.69,debit,SAVINGS
+2025-10-12,Swiggy order,1065.15,debit,SAVINGS
+2025-10-14,Amazon shopping,1909.32,debit,SAVINGS
+2025-10-15,Netflix subscription,649.0,debit,SAVINGS
+2025-10-17,Hotstar subscription,299.0,debit,SAVINGS
+2025-10-18,Amazon card purchase,965.96,debit,CREDIT_CARD
+2025-10-18,Fuel card purchase,795.27,debit,CREDIT_CARD
+2025-10-18,Petrol pump,1013.01,debit,SAVINGS
+2025-10-19,Jio mobile,599.0,debit,SAVINGS
+2025-10-19,UPI transfer to family,2540.68,debit,SAVINGS
+2025-10-19,Zomato order,635.77,debit,SAVINGS
+2025-10-21,Coffee shop,319.69,debit,SAVINGS
+2025-10-21,Swiggy order,641.73,debit,SAVINGS
+2025-10-22,Petrol pump,2220.86,debit,SAVINGS
+2025-10-23,Electricity bill,1005.38,debit,SAVINGS
+2025-10-25,Credit card bill payment,2446.15,debit,SAVINGS
+2025-10-25,Medical pharmacy,712.26,debit,SAVINGS
+2025-10-26,Amazon shopping,1798.71,debit,SAVINGS
+2025-10-27,Petrol pump,2034.57,debit,SAVINGS
+2025-10-28,Electricity bill,1025.86,debit,SAVINGS
+2025-10-28,Restaurant dinner,1437.57,debit,SAVINGS
+2025-10-28,Swiggy order,956.79,debit,SAVINGS
+2025-11-02,Electricity bill,749.26,debit,SAVINGS
+2025-11-03,Swiggy order,606.69,debit,SAVINGS
+2025-11-04,Amazon shopping,709.9,debit,SAVINGS
+2025-11-05,Coffee shop,337.18,debit,SAVINGS
+2025-11-05,Rent,18000.0,debit,SAVINGS
+2025-11-05,Restaurant dinner,1306.15,debit,SAVINGS
+2025-11-06,Freelance client payment 2,6727.0,credit,SAVINGS
+2025-11-06,Medical pharmacy,916.79,debit,SAVINGS
+2025-11-07,Uber ride,309.56,debit,SAVINGS
+2025-11-08,Freelance client payment 3,34220.82,credit,SAVINGS
+2025-11-08,Zomato order,594.66,debit,SAVINGS
+2025-11-09,Amazon shopping,945.44,debit,SAVINGS
+2025-11-10,Gym membership,1200.0,debit,SAVINGS
+2025-11-10,Medical pharmacy,631.74,debit,SAVINGS
+2025-11-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2025-11-12,Airtel broadband,999.0,debit,SAVINGS
+2025-11-12,Petrol pump,1020.19,debit,SAVINGS
+2025-11-12,Swiggy order,752.72,debit,SAVINGS
+2025-11-13,Petrol pump,1590.93,debit,SAVINGS
+2025-11-14,Zepto delivery,575.74,debit,SAVINGS
+2025-11-15,Netflix subscription,649.0,debit,SAVINGS
+2025-11-17,Freelance client payment 1,27567.99,credit,SAVINGS
+2025-11-17,Hotstar subscription,299.0,debit,SAVINGS
+2025-11-18,Amazon card purchase,1457.8,debit,CREDIT_CARD
+2025-11-18,BigBasket groceries,3167.69,debit,SAVINGS
+2025-11-18,BigBasket groceries,3348.3,debit,SAVINGS
+2025-11-18,Fuel card purchase,476.55,debit,CREDIT_CARD
+2025-11-18,Uber ride,491.77,debit,SAVINGS
+2025-11-19,Jio mobile,599.0,debit,SAVINGS
+2025-11-19,Restaurant dinner,1846.6,debit,SAVINGS
+2025-11-19,Zomato order,904.23,debit,SAVINGS
+2025-11-21,Restaurant dinner,1282.53,debit,SAVINGS
+2025-11-23,Amazon shopping,1371.77,debit,SAVINGS
+2025-11-24,Zepto delivery,635.21,debit,SAVINGS
+2025-11-25,Credit card bill payment,2686.6,debit,SAVINGS
+2025-11-26,Coffee shop,358.69,debit,SAVINGS
+2025-11-26,UPI transfer to family,3366.99,debit,SAVINGS
+2025-11-27,Petrol pump,1656.83,debit,SAVINGS
+2025-12-03,Coffee shop,275.69,debit,SAVINGS
+2025-12-03,Coffee shop,295.16,debit,SAVINGS
+2025-12-03,Zomato order,388.6,debit,SAVINGS
+2025-12-05,Electricity bill,1312.98,debit,SAVINGS
+2025-12-05,Rent,18000.0,debit,SAVINGS
+2025-12-05,Restaurant dinner,926.0,debit,SAVINGS
+2025-12-05,Restaurant dinner,885.87,debit,SAVINGS
+2025-12-05,Swiggy order,564.01,debit,SAVINGS
+2025-12-06,Amazon shopping,1898.59,debit,SAVINGS
+2025-12-06,Petrol pump,2094.93,debit,SAVINGS
+2025-12-08,Coffee shop,163.45,debit,SAVINGS
+2025-12-08,Swiggy order,392.11,debit,SAVINGS
+2025-12-08,Zomato order,368.57,debit,SAVINGS
+2025-12-10,Gym membership,1200.0,debit,SAVINGS
+2025-12-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2025-12-12,Airtel broadband,999.0,debit,SAVINGS
+2025-12-12,BigBasket groceries,2471.08,debit,SAVINGS
+2025-12-12,Zomato order,430.4,debit,SAVINGS
+2025-12-14,BigBasket groceries,3034.74,debit,SAVINGS
+2025-12-14,Petrol pump,2711.26,debit,SAVINGS
+2025-12-14,Uber ride,363.84,debit,SAVINGS
+2025-12-15,Netflix subscription,649.0,debit,SAVINGS
+2025-12-15,Petrol pump,1943.67,debit,SAVINGS
+2025-12-15,Zepto delivery,348.93,debit,SAVINGS
+2025-12-16,Amazon shopping,1740.09,debit,SAVINGS
+2025-12-16,Medical pharmacy,684.61,debit,SAVINGS
+2025-12-16,Zomato order,446.31,debit,SAVINGS
+2025-12-17,Hotstar subscription,299.0,debit,SAVINGS
+2025-12-17,UPI transfer to family,1881.47,debit,SAVINGS
+2025-12-18,Amazon card purchase,412.81,debit,CREDIT_CARD
+2025-12-18,Freelance client payment 1,10916.69,credit,SAVINGS
+2025-12-18,Fuel card purchase,649.3,debit,CREDIT_CARD
+2025-12-19,Jio mobile,599.0,debit,SAVINGS
+2025-12-21,Amazon shopping,1022.14,debit,SAVINGS
+2025-12-21,Amazon shopping,1280.63,debit,SAVINGS
+2025-12-22,Freelance client payment 2,63757.84,credit,SAVINGS
+2025-12-22,Uber ride,390.47,debit,SAVINGS
+2025-12-23,Petrol pump,1158.75,debit,SAVINGS
+2025-12-25,Credit card bill payment,1475.15,debit,SAVINGS
+2025-12-25,Medical pharmacy,519.51,debit,SAVINGS
+2025-12-26,Coffee shop,251.79,debit,SAVINGS
+2025-12-26,Uber ride,461.68,debit,SAVINGS
+2025-12-28,Restaurant dinner,1066.97,debit,SAVINGS
+2026-01-02,Uber ride,251.4,debit,SAVINGS
+2026-01-03,Coffee shop,262.2,debit,SAVINGS
+2026-01-03,Restaurant dinner,1066.96,debit,SAVINGS
+2026-01-03,Zomato order,315.82,debit,SAVINGS
+2026-01-04,Petrol pump,2238.76,debit,SAVINGS
+2026-01-05,Coffee shop,177.95,debit,SAVINGS
+2026-01-05,Freelance client payment 2,156305.36,credit,SAVINGS
+2026-01-05,Rent,18000.0,debit,SAVINGS
+2026-01-05,Restaurant dinner,1380.38,debit,SAVINGS
+2026-01-05,UPI transfer to family,2975.88,debit,SAVINGS
+2026-01-07,Uber ride,206.76,debit,SAVINGS
+2026-01-08,Restaurant dinner,1388.7,debit,SAVINGS
+2026-01-09,Electricity bill,790.89,debit,SAVINGS
+2026-01-10,Gym membership,1200.0,debit,SAVINGS
+2026-01-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-01-12,Airtel broadband,999.0,debit,SAVINGS
+2026-01-12,Freelance client payment 1,40748.43,credit,SAVINGS
+2026-01-12,Uber ride,391.8,debit,SAVINGS
+2026-01-13,UPI transfer to family,1307.48,debit,SAVINGS
+2026-01-14,Petrol pump,2490.85,debit,SAVINGS
+2026-01-15,Amazon shopping,1031.23,debit,SAVINGS
+2026-01-15,Netflix subscription,649.0,debit,SAVINGS
+2026-01-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-01-18,Amazon card purchase,565.77,debit,CREDIT_CARD
+2026-01-18,BigBasket groceries,4131.96,debit,SAVINGS
+2026-01-18,Fuel card purchase,376.21,debit,CREDIT_CARD
+2026-01-19,Amazon shopping,1129.23,debit,SAVINGS
+2026-01-19,Jio mobile,599.0,debit,SAVINGS
+2026-01-19,Petrol pump,1949.21,debit,SAVINGS
+2026-01-19,Swiggy order,661.21,debit,SAVINGS
+2026-01-20,Zepto delivery,299.33,debit,SAVINGS
+2026-01-21,Medical pharmacy,577.27,debit,SAVINGS
+2026-01-21,Restaurant dinner,1680.26,debit,SAVINGS
+2026-01-21,Swiggy order,612.67,debit,SAVINGS
+2026-01-24,Bike repair - unexpected,6120.0,debit,SAVINGS
+2026-01-25,Credit card bill payment,1308.3,debit,SAVINGS
+2026-01-25,Petrol pump,1417.44,debit,SAVINGS
+2026-01-26,Zomato order,447.54,debit,SAVINGS
+2026-02-03,Coffee shop,178.58,debit,SAVINGS
+2026-02-03,Swiggy order,570.66,debit,SAVINGS
+2026-02-05,Coffee shop,252.32,debit,SAVINGS
+2026-02-05,Rent,18000.0,debit,SAVINGS
+2026-02-05,Swiggy order,508.98,debit,SAVINGS
+2026-02-06,Amazon shopping,1254.41,debit,SAVINGS
+2026-02-06,Petrol pump,2317.8,debit,SAVINGS
+2026-02-07,Amazon shopping,1473.54,debit,SAVINGS
+2026-02-08,Restaurant dinner,1196.5,debit,SAVINGS
+2026-02-08,Restaurant dinner,1519.86,debit,SAVINGS
+2026-02-08,Zomato order,411.63,debit,SAVINGS
+2026-02-10,Freelance client payment 1,121833.58,credit,SAVINGS
+2026-02-10,Gym membership,1200.0,debit,SAVINGS
+2026-02-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-02-12,Airtel broadband,999.0,debit,SAVINGS
+2026-02-12,Amazon shopping,1110.59,debit,SAVINGS
+2026-02-12,Electricity bill,748.1,debit,SAVINGS
+2026-02-12,UPI transfer to family,1698.98,debit,SAVINGS
+2026-02-12,Zomato order,301.73,debit,SAVINGS
+2026-02-15,Netflix subscription,649.0,debit,SAVINGS
+2026-02-16,Restaurant dinner,1624.2,debit,SAVINGS
+2026-02-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-02-18,Amazon card purchase,817.26,debit,CREDIT_CARD
+2026-02-18,Fuel card purchase,663.83,debit,CREDIT_CARD
+2026-02-18,Medical pharmacy,905.32,debit,SAVINGS
+2026-02-19,BigBasket groceries,2603.71,debit,SAVINGS
+2026-02-19,Coffee shop,181.14,debit,SAVINGS
+2026-02-19,Electricity bill,1361.11,debit,SAVINGS
+2026-02-19,Jio mobile,599.0,debit,SAVINGS
+2026-02-19,Petrol pump,1398.56,debit,SAVINGS
+2026-02-21,Zepto delivery,692.3,debit,SAVINGS
+2026-02-23,UPI transfer to family,2399.78,debit,SAVINGS
+2026-02-24,Amazon shopping,1274.0,debit,SAVINGS
+2026-02-24,Coffee shop,277.7,debit,SAVINGS
+2026-02-24,Uber ride,233.14,debit,SAVINGS
+2026-02-25,Credit card bill payment,2057.07,debit,SAVINGS
+2026-02-25,Medical pharmacy,715.28,debit,SAVINGS
+2026-02-28,Uber ride,212.62,debit,SAVINGS
+2026-03-02,Amazon shopping,1408.2,debit,SAVINGS
+2026-03-03,Restaurant dinner,683.45,debit,SAVINGS
+2026-03-03,Swiggy order,399.54,debit,SAVINGS
+2026-03-03,Swiggy order,302.61,debit,SAVINGS
+2026-03-03,Zomato order,475.6,debit,SAVINGS
+2026-03-03,Zomato order,849.2,debit,SAVINGS
+2026-03-05,Coffee shop,245.69,debit,SAVINGS
+2026-03-05,Rent,18000.0,debit,SAVINGS
+2026-03-05,Restaurant dinner,1419.82,debit,SAVINGS
+2026-03-06,Uber ride,172.29,debit,SAVINGS
+2026-03-07,Petrol pump,1495.7,debit,SAVINGS
+2026-03-07,Uber ride,278.73,debit,SAVINGS
+2026-03-08,Freelance client payment 2,63542.13,credit,SAVINGS
+2026-03-10,Gym membership,1200.0,debit,SAVINGS
+2026-03-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-03-12,Airtel broadband,999.0,debit,SAVINGS
+2026-03-12,Coffee shop,225.14,debit,SAVINGS
+2026-03-12,Freelance client payment 1,13162.8,credit,SAVINGS
+2026-03-13,BigBasket groceries,2714.57,debit,SAVINGS
+2026-03-15,Netflix subscription,649.0,debit,SAVINGS
+2026-03-16,Restaurant dinner,1452.65,debit,SAVINGS
+2026-03-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-03-18,Amazon card purchase,1018.29,debit,CREDIT_CARD
+2026-03-18,Fuel card purchase,830.88,debit,CREDIT_CARD
+2026-03-19,Amazon shopping,1404.38,debit,SAVINGS
+2026-03-19,Jio mobile,599.0,debit,SAVINGS
+2026-03-19,Swiggy order,811.89,debit,SAVINGS
+2026-03-20,Electricity bill,819.35,debit,SAVINGS
+2026-03-21,Restaurant dinner,1690.18,debit,SAVINGS
+2026-03-21,Zomato order,366.02,debit,SAVINGS
+2026-03-21,Zomato order,430.2,debit,SAVINGS
+2026-03-22,Uber ride,228.74,debit,SAVINGS
+2026-03-23,Medical pharmacy,832.03,debit,SAVINGS
+2026-03-23,Medical pharmacy,939.0,debit,SAVINGS
+2026-03-23,Uber ride,252.42,debit,SAVINGS
+2026-03-24,Amazon shopping,1004.72,debit,SAVINGS
+2026-03-25,BigBasket groceries,2353.44,debit,SAVINGS
+2026-03-25,Credit card bill payment,2568.28,debit,SAVINGS
+2026-03-25,Electricity bill,1176.63,debit,SAVINGS
+2026-03-27,Petrol pump,2375.18,debit,SAVINGS
+2026-03-27,Zepto delivery,640.8,debit,SAVINGS
+2026-03-28,Amazon shopping,2121.15,debit,SAVINGS
+2026-03-28,UPI transfer to family,3617.08,debit,SAVINGS
+2026-04-04,Uber ride,338.13,debit,SAVINGS
+2026-04-05,Rent,18000.0,debit,SAVINGS
+2026-04-05,Restaurant dinner,918.16,debit,SAVINGS
+2026-04-05,Swiggy order,547.39,debit,SAVINGS
+2026-04-06,Medical pharmacy,1080.96,debit,SAVINGS
+2026-04-07,Amazon shopping,1066.75,debit,SAVINGS
+2026-04-07,Amazon shopping,1187.1,debit,SAVINGS
+2026-04-08,Swiggy order,570.1,debit,SAVINGS
+2026-04-10,Gym membership,1200.0,debit,SAVINGS
+2026-04-10,LIC premium,30000.0,debit,SAVINGS
+2026-04-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-04-12,Airtel broadband,999.0,debit,SAVINGS
+2026-04-12,Zomato order,465.4,debit,SAVINGS
+2026-04-14,Electricity bill,1110.31,debit,SAVINGS
+2026-04-14,Freelance client payment 1,100266.66,credit,SAVINGS
+2026-04-14,UPI transfer to family,2785.85,debit,SAVINGS
+2026-04-15,Netflix subscription,649.0,debit,SAVINGS
+2026-04-15,Zepto delivery,674.8,debit,SAVINGS
+2026-04-16,Swiggy order,570.56,debit,SAVINGS
+2026-04-16,Zomato order,255.5,debit,SAVINGS
+2026-04-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-04-18,Amazon card purchase,1107.12,debit,CREDIT_CARD
+2026-04-18,Amazon shopping,1569.9,debit,SAVINGS
+2026-04-18,Fuel card purchase,513.17,debit,CREDIT_CARD
+2026-04-18,Uber ride,386.76,debit,SAVINGS
+2026-04-19,Jio mobile,599.0,debit,SAVINGS
+2026-04-19,Uber ride,193.28,debit,SAVINGS
+2026-04-19,Uber ride,422.75,debit,SAVINGS
+2026-04-21,Electricity bill,924.29,debit,SAVINGS
+2026-04-21,Swiggy order,595.17,debit,SAVINGS
+2026-04-22,Petrol pump,1679.82,debit,SAVINGS
+2026-04-23,BigBasket groceries,2980.63,debit,SAVINGS
+2026-04-24,Coffee shop,279.26,debit,SAVINGS
+2026-04-24,Restaurant dinner,888.46,debit,SAVINGS
+2026-04-25,Credit card bill payment,2250.41,debit,SAVINGS
+2026-04-26,Coffee shop,201.82,debit,SAVINGS
+2026-04-26,UPI transfer to family,2542.59,debit,SAVINGS
+2026-04-26,Zomato order,674.67,debit,SAVINGS
+2026-04-28,Amazon shopping,1326.69,debit,SAVINGS
+2026-04-28,BigBasket groceries,3091.16,debit,SAVINGS
+2026-04-28,Petrol pump,1499.08,debit,SAVINGS
+2026-04-28,Petrol pump,2153.75,debit,SAVINGS
+2026-05-05,Electricity bill,1014.81,debit,SAVINGS
+2026-05-05,Petrol pump,2576.69,debit,SAVINGS
+2026-05-05,Rent,18000.0,debit,SAVINGS
+2026-05-05,Restaurant dinner,1577.89,debit,SAVINGS
+2026-05-05,Swiggy order,436.11,debit,SAVINGS
+2026-05-05,Uber ride,543.18,debit,SAVINGS
+2026-05-05,Zomato order,304.87,debit,SAVINGS
+2026-05-06,UPI transfer to family,1627.93,debit,SAVINGS
+2026-05-07,Freelance client payment 1,2725.3,credit,SAVINGS
+2026-05-08,Coffee shop,271.71,debit,SAVINGS
+2026-05-08,Restaurant dinner,1352.13,debit,SAVINGS
+2026-05-09,Freelance client payment 2,40492.49,credit,SAVINGS
+2026-05-10,Gym membership,1200.0,debit,SAVINGS
+2026-05-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-05-10,Zepto delivery,554.05,debit,SAVINGS
+2026-05-12,Airtel broadband,999.0,debit,SAVINGS
+2026-05-12,Amazon shopping,1180.92,debit,SAVINGS
+2026-05-12,Restaurant dinner,1181.78,debit,SAVINGS
+2026-05-14,Medical pharmacy,572.1,debit,SAVINGS
+2026-05-15,Netflix subscription,649.0,debit,SAVINGS
+2026-05-16,Restaurant dinner,1253.17,debit,SAVINGS
+2026-05-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-05-18,Amazon card purchase,1045.22,debit,CREDIT_CARD
+2026-05-18,Amazon shopping,1338.75,debit,SAVINGS
+2026-05-18,Fuel card purchase,531.84,debit,CREDIT_CARD
+2026-05-19,Coffee shop,147.63,debit,SAVINGS
+2026-05-19,Jio mobile,599.0,debit,SAVINGS
+2026-05-20,Petrol pump,2269.81,debit,SAVINGS
+2026-05-20,Uber ride,342.83,debit,SAVINGS
+2026-05-21,Swiggy order,772.42,debit,SAVINGS
+2026-05-21,Zepto delivery,736.34,debit,SAVINGS
+2026-05-23,BigBasket groceries,2413.76,debit,SAVINGS
+2026-05-23,Uber ride,351.78,debit,SAVINGS
+2026-05-24,Medical emergency expense,9000.0,debit,SAVINGS
+2026-05-25,Credit card bill payment,2190.36,debit,SAVINGS
+2026-05-25,Electricity bill,2262.02,debit,SAVINGS
+2026-05-26,Amazon shopping,1247.98,debit,SAVINGS
+2026-05-26,Uber ride,389.07,debit,SAVINGS
+2026-05-26,Zomato order,477.57,debit,SAVINGS
+2026-05-27,Amazon shopping,1006.64,debit,SAVINGS
+2026-05-28,Swiggy order,542.74,debit,SAVINGS
+2026-06-03,Coffee shop,316.7,debit,SAVINGS
+2026-06-04,UPI transfer to family,3853.79,debit,SAVINGS
+2026-06-05,Electricity bill,827.09,debit,SAVINGS
+2026-06-05,Rent,18000.0,debit,SAVINGS
+2026-06-05,Zepto delivery,961.91,debit,SAVINGS
+2026-06-06,Uber ride,365.1,debit,SAVINGS
+2026-06-08,Freelance client payment 2,35938.51,credit,SAVINGS
+2026-06-08,Restaurant dinner,1016.06,debit,SAVINGS
+2026-06-08,Swiggy order,638.98,debit,SAVINGS
+2026-06-08,Zomato order,508.65,debit,SAVINGS
+2026-06-08,Zomato order,288.33,debit,SAVINGS
+2026-06-10,Gym membership,1200.0,debit,SAVINGS
+2026-06-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-06-11,Petrol pump,2245.95,debit,SAVINGS
+2026-06-12,Airtel broadband,999.0,debit,SAVINGS
+2026-06-12,Restaurant dinner,1229.32,debit,SAVINGS
+2026-06-12,Zomato order,251.89,debit,SAVINGS
+2026-06-13,Medical pharmacy,707.75,debit,SAVINGS
+2026-06-15,Electricity bill,1094.63,debit,SAVINGS
+2026-06-15,Netflix subscription,649.0,debit,SAVINGS
+2026-06-15,Petrol pump,2352.99,debit,SAVINGS
+2026-06-16,Uber ride,209.42,debit,SAVINGS
+2026-06-17,Freelance client payment 3,27804.83,credit,SAVINGS
+2026-06-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-06-18,Amazon card purchase,1673.01,debit,CREDIT_CARD
+2026-06-18,Fuel card purchase,660.19,debit,CREDIT_CARD
+2026-06-19,Coffee shop,403.08,debit,SAVINGS
+2026-06-19,Jio mobile,599.0,debit,SAVINGS
+2026-06-21,Coffee shop,264.28,debit,SAVINGS
+2026-06-21,Swiggy order,463.38,debit,SAVINGS
+2026-06-22,BigBasket groceries,2041.8,debit,SAVINGS
+2026-06-22,Freelance client payment 1,22457.69,credit,SAVINGS
+2026-06-23,Amazon shopping,1077.57,debit,SAVINGS
+2026-06-24,Zepto delivery,537.67,debit,SAVINGS
+2026-06-25,Credit card bill payment,3240.56,debit,SAVINGS
+2026-06-27,Amazon shopping,919.52,debit,SAVINGS
+2026-06-28,Amazon shopping,1133.79,debit,SAVINGS
+2026-07-02,Electricity bill,1256.99,debit,SAVINGS
+2026-07-03,Restaurant dinner,1083.37,debit,SAVINGS
+2026-07-03,Uber ride,219.3,debit,SAVINGS
+2026-07-03,Uber ride,438.26,debit,SAVINGS
+2026-07-03,Zomato order,567.66,debit,SAVINGS
+2026-07-05,Electricity bill,1051.22,debit,SAVINGS
+2026-07-05,Rent,18000.0,debit,SAVINGS
+2026-07-05,Swiggy order,506.24,debit,SAVINGS
+2026-07-05,Zomato order,639.22,debit,SAVINGS
+2026-07-06,Medical pharmacy,856.85,debit,SAVINGS
+2026-07-06,Uber ride,178.5,debit,SAVINGS
+2026-07-07,Petrol pump,1522.27,debit,SAVINGS
+2026-07-07,UPI transfer to family,3616.54,debit,SAVINGS
+2026-07-09,Freelance client payment 1,100699.71,credit,SAVINGS
+2026-07-10,Gym membership,1200.0,debit,SAVINGS
+2026-07-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-07-12,Airtel broadband,999.0,debit,SAVINGS
+2026-07-12,Coffee shop,183.38,debit,SAVINGS
+2026-07-13,BigBasket groceries,3283.59,debit,SAVINGS
+2026-07-13,Zepto delivery,741.9,debit,SAVINGS
+2026-07-15,Netflix subscription,649.0,debit,SAVINGS
+2026-07-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-07-17,Petrol pump,1783.42,debit,SAVINGS
+2026-07-18,Amazon card purchase,602.69,debit,CREDIT_CARD
+2026-07-18,Fuel card purchase,780.7,debit,CREDIT_CARD
+2026-07-19,Jio mobile,599.0,debit,SAVINGS
+2026-07-19,Swiggy order,495.58,debit,SAVINGS
+2026-07-20,Medical pharmacy,791.88,debit,SAVINGS
+2026-07-20,Petrol pump,2415.64,debit,SAVINGS
+2026-07-21,Coffee shop,198.05,debit,SAVINGS
+2026-07-21,Zomato order,399.05,debit,SAVINGS
+2026-07-22,Amazon shopping,1010.92,debit,SAVINGS
+2026-07-24,Amazon shopping,1093.64,debit,SAVINGS
+2026-07-24,Coffee shop,396.35,debit,SAVINGS
+2026-07-24,Zomato order,419.56,debit,SAVINGS
+2026-07-25,Credit card bill payment,1921.38,debit,SAVINGS
+2026-07-25,Uber ride,517.82,debit,SAVINGS
+2026-07-26,Restaurant dinner,972.2,debit,SAVINGS
+2026-07-27,BigBasket groceries,4945.67,debit,SAVINGS
+2026-08-03,Zomato order,430.29,debit,SAVINGS
+2026-08-04,BigBasket groceries,3465.58,debit,SAVINGS
+2026-08-05,Coffee shop,230.01,debit,SAVINGS
+2026-08-05,Rent,18000.0,debit,SAVINGS
+2026-08-05,Zomato order,450.71,debit,SAVINGS
+2026-08-08,Restaurant dinner,1668.84,debit,SAVINGS
+2026-08-08,Restaurant dinner,1330.78,debit,SAVINGS
+2026-08-08,Zomato order,447.85,debit,SAVINGS
+2026-08-10,Gym membership,1200.0,debit,SAVINGS
+2026-08-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-08-10,Uber ride,500.33,debit,SAVINGS
+2026-08-10,Uber ride,287.88,debit,SAVINGS
+2026-08-12,Airtel broadband,999.0,debit,SAVINGS
+2026-08-12,Freelance client payment 1,65461.64,credit,SAVINGS
+2026-08-12,Swiggy order,380.48,debit,SAVINGS
+2026-08-13,Amazon shopping,1376.0,debit,SAVINGS
+2026-08-15,Amazon shopping,1892.28,debit,SAVINGS
+2026-08-15,Netflix subscription,649.0,debit,SAVINGS
+2026-08-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-08-18,Amazon card purchase,965.2,debit,CREDIT_CARD
+2026-08-18,Amazon shopping,1229.8,debit,SAVINGS
+2026-08-18,Amazon shopping,954.94,debit,SAVINGS
+2026-08-18,Fuel card purchase,633.06,debit,CREDIT_CARD
+2026-08-18,UPI transfer to family,3516.49,debit,SAVINGS
+2026-08-19,Jio mobile,599.0,debit,SAVINGS
+2026-08-19,Petrol pump,2665.03,debit,SAVINGS
+2026-08-19,Restaurant dinner,1192.48,debit,SAVINGS
+2026-08-21,Coffee shop,346.41,debit,SAVINGS
+2026-08-24,Gadget replacement,12960.0,debit,SAVINGS
+2026-08-24,Medical pharmacy,503.72,debit,SAVINGS
+2026-08-24,Restaurant dinner,703.01,debit,SAVINGS
+2026-08-24,Swiggy order,492.39,debit,SAVINGS
+2026-08-25,BigBasket groceries,3063.3,debit,SAVINGS
+2026-08-25,Credit card bill payment,2219.8,debit,SAVINGS
+2026-08-25,Electricity bill,936.22,debit,SAVINGS
+2026-08-25,UPI transfer to family,4766.66,debit,SAVINGS
+2026-08-26,Electricity bill,767.75,debit,SAVINGS
+2026-08-26,Uber ride,321.39,debit,SAVINGS
+2026-08-26,Zepto delivery,1011.22,debit,SAVINGS
+2026-08-27,Petrol pump,2580.46,debit,SAVINGS
+2026-08-28,Petrol pump,2385.85,debit,SAVINGS
+2026-09-03,Electricity bill,1150.6,debit,SAVINGS
+2026-09-05,Rent,18000.0,debit,SAVINGS
+2026-09-05,Restaurant dinner,867.36,debit,SAVINGS
+2026-09-05,Uber ride,243.02,debit,SAVINGS
+2026-09-05,Zomato order,375.15,debit,SAVINGS
+2026-09-07,Zepto delivery,282.5,debit,SAVINGS
+2026-09-10,Gym membership,1200.0,debit,SAVINGS
+2026-09-10,SIP mutual fund transfer,2000.0,debit,SAVINGS
+2026-09-10,UPI transfer to family,1882.93,debit,SAVINGS
+2026-09-12,Airtel broadband,999.0,debit,SAVINGS
+2026-09-12,Freelance client payment 1,115096.04,credit,SAVINGS
+2026-09-12,Zomato order,424.3,debit,SAVINGS
+2026-09-13,Zepto delivery,951.6,debit,SAVINGS
+2026-09-15,Medical pharmacy,594.6,debit,SAVINGS
+2026-09-15,Netflix subscription,649.0,debit,SAVINGS
+2026-09-16,Coffee shop,171.56,debit,SAVINGS
+2026-09-16,Restaurant dinner,1220.87,debit,SAVINGS
+2026-09-16,Swiggy order,455.71,debit,SAVINGS
+2026-09-16,UPI transfer to family,3625.78,debit,SAVINGS
+2026-09-17,Hotstar subscription,299.0,debit,SAVINGS
+2026-09-18,Amazon card purchase,1592.73,debit,CREDIT_CARD
+2026-09-18,Fuel card purchase,719.68,debit,CREDIT_CARD
+2026-09-18,Uber ride,287.25,debit,SAVINGS
+2026-09-19,Jio mobile,599.0,debit,SAVINGS
+2026-09-21,Petrol pump,2322.63,debit,SAVINGS
+2026-09-22,Amazon shopping,1628.79,debit,SAVINGS
+2026-09-22,Petrol pump,1723.87,debit,SAVINGS
+2026-09-24,Swiggy order,1183.87,debit,SAVINGS
+2026-09-25,Credit card bill payment,3211.69,debit,SAVINGS
+2026-09-26,Amazon shopping,2368.04,debit,SAVINGS
+2026-09-26,BigBasket groceries,4520.78,debit,SAVINGS
+2026-09-26,Coffee shop,237.06,debit,SAVINGS
+2026-09-26,Restaurant dinner,1467.84,debit,SAVINGS
+2026-09-28,Amazon shopping,824.36,debit,SAVINGS
+2026-09-28,Coffee shop,405.75,debit,SAVINGS
+2026-09-28,Coffee shop,373.84,debit,SAVINGS
+2026-09-28,Uber ride,464.72,debit,SAVINGS

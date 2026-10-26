@@ -1,0 +1,3 @@
+# Optional only. The default Copilot is fully offline and does not import this package.
+# Install separately only when explicitly enabling the OpenAI-compatible LLM mode.
+openai>=1.54.0,<3.0.0

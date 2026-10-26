@@ -1,0 +1,15 @@
+ASKABHI 360 — WINDOWS START
+
+1. Extract this ZIP to a normal local folder, preferably C:\AskAbhi360 (not a synced OneDrive folder).
+2. Open that folder in VS Code.
+3. In the VS Code terminal run:
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   .\FIX_AND_RUN_WINDOWS.ps1
+4. Open the Local URL shown by Streamlit, usually http://localhost:8501.
+
+If you see "An Application Control policy has blocked this file" for pyarrow.lib:
+- This is a Windows security-policy/DLL-loading issue, not a theme issue.
+- The launcher attempts to remove file zone markers and install the project's pinned dependencies.
+- If the same message persists, do not disable Windows security or bypass your organisation's policy. Ask your device administrator to allow the official Python environment / pyarrow binary, or use an approved personal development device.
+
+The app's bundled bank/UPI records are synthetic; Pay & UPI is a local demo and does not send money.
